@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<title>
+		</title>
+		<style>
+			body { line-height:108%; font-family:Candara; font-size:11pt; color:#595959 }
+			h1, h2, h3, h4, h5, h6, p { margin:0pt 0pt 8pt }
+			li, table { margin-top:0pt; margin-bottom:8pt }
+			h1 { margin-top:24pt; margin-bottom:1pt; page-break-inside:avoid; page-break-after:avoid; line-height:108%; font-family:Candara; font-size:20pt; font-weight:normal; color:#1d665d }
+			h2 { margin-top:21pt; margin-bottom:1pt; page-break-inside:avoid; page-break-after:avoid; line-height:108%; font-family:Candara; font-size:17pt; font-weight:normal; color:#262626 }
+			h3 { margin-top:21pt; margin-bottom:1pt; page-break-inside:avoid; page-break-after:avoid; line-height:108%; font-family:Candara; font-size:16pt; font-weight:normal; color:#1d665d }
+			h4 { margin-top:21pt; margin-bottom:1pt; page-break-inside:avoid; page-break-after:avoid; line-height:108%; font-family:Candara; font-size:14pt; font-weight:normal; font-style:italic; color:#0d0d0d }
+			h5 { margin-top:21pt; margin-bottom:1pt; page-break-inside:avoid; page-break-after:avoid; line-height:108%; font-family:Candara; font-size:14pt; font-weight:normal; font-style:italic; color:#1d665d }
+			h6 { margin-top:21pt; margin-bottom:1pt; page-break-inside:avoid; page-break-after:avoid; line-height:108%; font-family:Candara; font-size:13pt; font-weight:normal; color:#0d0d0d }
+			.Heading7 { margin-top:21pt; margin-bottom:1pt; page-break-inside:avoid; page-break-after:avoid; line-height:108%; font-family:Candara; font-size:12pt; font-weight:normal; font-style:italic; color:#000000 }
+			.Heading8 { margin-top:21pt; margin-bottom:1pt; page-break-inside:avoid; page-break-after:avoid; line-height:108%; font-family:Candara; font-size:12pt; font-weight:normal; font-style:italic; color:#1d665d }
+			.Heading9 { margin-top:21pt; margin-bottom:1pt; page-break-inside:avoid; page-break-after:avoid; line-height:108%; font-family:Candara; font-size:11pt; font-weight:normal; color:#000000 }
+			.BalloonText { margin-bottom:0pt; line-height:normal; font-family:'Segoe UI'; font-size:11pt; color:#595959 }
+			.Bibliography { margin-bottom:8pt; line-height:108%; font-size:11pt; color:#595959 }
+			.BlockText { margin-top:3pt; margin-bottom:0pt; line-height:104%; font-size:11pt; font-weight:bold; color:#595959 }
+			.BodyText { margin-bottom:6pt; line-height:108%; font-size:11pt; color:#595959 }
+			.BodyText2 { margin-bottom:6pt; line-height:200%; font-size:11pt; color:#595959 }
+			.BodyText3 { margin-bottom:6pt; line-height:108%; font-size:11pt; color:#595959 }
+			.BodyTextFirstIndent { margin-bottom:8pt; text-indent:18pt; line-height:108%; font-size:11pt; color:#595959 }
+			.BodyTextFirstIndent2 { margin-left:18pt; margin-bottom:8pt; text-indent:18pt; line-height:108%; font-size:11pt; color:#595959 }
+			.BodyTextIndent { margin-left:18pt; margin-bottom:6pt; line-height:108%; font-size:11pt; color:#595959 }
+			.BodyTextIndent2 { margin-left:18pt; margin-bottom:6pt; line-height:200%; font-size:11pt; color:#595959 }
+			.BodyTextIndent3 { margin-left:18pt; margin-bottom:6pt; line-height:108%; font-size:11pt; color:#595959 }
+			.Caption { margin-bottom:10pt; line-height:normal; font-size:11pt; font-style:italic; color:#21272f }
+			.Closing { margin-left:216pt; margin-bottom:0pt; line-height:normal; font-size:11pt; color:#595959 }
+			.CommentSubject { margin-bottom:8pt; line-height:normal; font-size:11pt; font-weight:bold; color:#595959 }
+			.CommentText { margin-bottom:8pt; line-height:normal; font-size:11pt; color:#595959 }
+			.Date { margin-top:6pt; margin-bottom:6pt; line-height:108%; font-size:12pt; color:#1d665d }
+			.DocumentMap { margin-bottom:0pt; line-height:normal; font-family:'Segoe UI'; font-size:11pt; color:#595959 }
+			.E-mailSignature { margin-bottom:0pt; line-height:normal; font-size:11pt; color:#595959 }
+			.EndnoteText { margin-bottom:0pt; line-height:normal; font-size:11pt; color:#595959 }
+			.EnvelopeAddress { margin-left:144pt; margin-bottom:0pt; line-height:normal; font-family:Candara; font-size:12pt; color:#595959 }
+			.EnvelopeReturn { margin-bottom:0pt; line-height:normal; font-family:Candara; font-size:11pt; color:#595959 }
+			.Footer { margin-bottom:0pt; line-height:normal; font-size:11pt; color:#595959 }
+			.FootnoteText { margin-bottom:0pt; line-height:normal; font-size:11pt; color:#595959 }
+			.HTMLAddress { margin-bottom:0pt; line-height:normal; font-size:11pt; font-style:italic; color:#595959 }
+			.HTMLPreformatted { margin-bottom:0pt; line-height:normal; font-family:Consolas; font-size:11pt; color:#595959 }
+			.Header { margin-bottom:0pt; line-height:normal; font-size:11pt; color:#595959 }
+			.Index1 { margin-left:11pt; margin-bottom:0pt; text-indent:-11pt; line-height:normal; font-size:11pt; color:#595959 }
+			.Index2 { margin-left:22pt; margin-bottom:0pt; text-indent:-11pt; line-height:normal; font-size:11pt; color:#595959 }
+			.Index3 { margin-left:33pt; margin-bottom:0pt; text-indent:-11pt; line-height:normal; font-size:11pt; color:#595959 }
+			.Index4 { margin-left:44pt; margin-bottom:0pt; text-indent:-11pt; line-height:normal; font-size:11pt; color:#595959 }
+			.Index5 { margin-left:55pt; margin-bottom:0pt; text-indent:-11pt; line-height:normal; font-size:11pt; color:#595959 }
+			.Index6 { margin-left:66pt; margin-bottom:0pt; text-indent:-11pt; line-height:normal; font-size:11pt; color:#595959 }
+			.Index7 { margin-left:77pt; margin-bottom:0pt; text-indent:-11pt; line-height:normal; font-size:11pt; color:#595959 }
+			.Index8 { margin-left:88pt; margin-bottom:0pt; text-indent:-11pt; line-height:normal; font-size:11pt; color:#595959 }
+			.Index9 { margin-left:99pt; margin-bottom:0pt; text-indent:-11pt; line-height:normal; font-size:11pt; color:#595959 }
+			.IndexHeading { margin-bottom:8pt; line-height:108%; font-family:Candara; font-size:11pt; font-weight:bold; color:#595959 }
+			.IntenseQuote { margin:18pt 43.2pt; text-align:center; line-height:108%; border-top:0.75pt solid #1d665d; border-bottom:0.75pt solid #1d665d; padding-top:10pt; padding-bottom:10pt; font-size:11pt; font-style:italic; color:#1d665d }
+			.List { margin-left:18pt; margin-bottom:8pt; text-indent:-18pt; line-height:108%; font-size:11pt; color:#595959 }
+			.List2 { margin-left:36pt; margin-bottom:8pt; text-indent:-18pt; line-height:108%; font-size:11pt; color:#595959 }
+			.List3 { margin-left:54pt; margin-bottom:8pt; text-indent:-18pt; line-height:108%; font-size:11pt; color:#595959 }
+			.List4 { margin-left:72pt; margin-bottom:8pt; text-indent:-18pt; line-height:108%; font-size:11pt; color:#595959 }
+			.List5 { margin-left:90pt; margin-bottom:8pt; text-indent:-18pt; line-height:108%; font-size:11pt; color:#595959 }
+			.ListBullet { margin-left:43.2pt; margin-bottom:8pt; text-indent:-14.4pt; line-height:108%; font-size:11pt; color:#595959 }
+			.ListBullet2 { margin-left:36pt; margin-bottom:8pt; text-indent:-18pt; line-height:108%; font-size:11pt; color:#595959 }
+			.ListBullet3 { margin-left:54pt; margin-bottom:8pt; text-indent:-18pt; line-height:108%; font-size:11pt; color:#595959 }
+			.ListBullet4 { margin-left:72pt; margin-bottom:8pt; text-indent:-18pt; line-height:108%; font-size:11pt; color:#595959 }
+			.ListBullet5 { margin-left:90pt; margin-bottom:8pt; text-indent:-18pt; line-height:108%; font-size:11pt; color:#595959 }
+			.ListContinue { margin-left:18pt; margin-bottom:6pt; line-height:108%; font-size:11pt; color:#595959 }
+			.ListContinue2 { margin-left:36pt; margin-bottom:6pt; line-height:108%; font-size:11pt; color:#595959 }
+			.ListContinue3 { margin-left:54pt; margin-bottom:6pt; line-height:108%; font-size:11pt; color:#595959 }
+			.ListContinue4 { margin-left:72pt; margin-bottom:6pt; line-height:108%; font-size:11pt; color:#595959 }
+			.ListContinue5 { margin-left:90pt; margin-bottom:6pt; line-height:108%; font-size:11pt; color:#595959 }
+			.ListNumber { margin-left:43.2pt; margin-bottom:8pt; text-indent:-14.4pt; line-height:108%; font-size:11pt; color:#595959 }
+			.ListNumber2 { margin-left:36pt; margin-bottom:8pt; text-indent:-18pt; line-height:108%; font-size:11pt; color:#595959 }
+			.ListNumber3 { margin-left:54pt; margin-bottom:8pt; text-indent:-18pt; line-height:108%; font-size:11pt; color:#595959 }
+			.ListNumber4 { margin-left:72pt; margin-bottom:8pt; text-indent:-18pt; line-height:108%; font-size:11pt; color:#595959 }
+			.ListNumber5 { margin-left:90pt; margin-bottom:8pt; text-indent:-18pt; line-height:108%; font-size:11pt; color:#595959 }
+			.ListParagraph { margin-left:36pt; margin-bottom:8pt; line-height:108%; font-size:11pt; color:#595959 }
+			.Macro { margin-bottom:0pt; line-height:108%; font-family:Consolas; font-size:11pt; color:#595959 }
+			.MessageHeader { margin-left:54pt; margin-bottom:0pt; text-indent:-54pt; line-height:normal; border:0.75pt solid #000000; padding:1pt; font-family:Candara; font-size:12pt; color:#595959; background-color:#cccccc }
+			.NoSpacing { margin-bottom:0pt; line-height:normal; font-size:11pt; color:#595959 }
+			.NormalWeb { margin-bottom:8pt; line-height:108%; font-family:'Times New Roman'; font-size:12pt; color:#595959 }
+			.NormalIndent { margin-left:36pt; margin-bottom:8pt; line-height:108%; font-size:11pt; color:#595959 }
+			.NoteHeading { margin-bottom:0pt; line-height:normal; font-size:11pt; color:#595959 }
+			.PlainText { margin-bottom:0pt; line-height:normal; font-family:Consolas; font-size:11pt; color:#595959 }
+			.Quote { margin:10pt 43.2pt 8pt; text-align:center; line-height:108%; font-size:11pt; font-style:italic; color:#404040 }
+			.Salutation { margin-bottom:8pt; line-height:108%; font-size:11pt; color:#595959 }
+			.Signature { margin-left:216pt; margin-bottom:0pt; line-height:normal; font-size:11pt; color:#595959 }
+			.Subtitle { margin-bottom:8pt; line-height:108%; font-size:11pt; letter-spacing:0.75pt; color:#5a5a5a }
+			.TOAHeading { margin-top:6pt; margin-bottom:8pt; line-height:108%; font-family:Candara; font-size:12pt; font-weight:bold; color:#595959 }
+			.TOC1 { margin-bottom:5pt; line-height:108%; font-size:11pt; color:#595959 }
+			.TOC2 { margin-left:11pt; margin-bottom:5pt; line-height:108%; font-size:11pt; color:#595959 }
+			.TOC3 { margin-left:22pt; margin-bottom:5pt; line-height:108%; font-size:11pt; color:#595959 }
+			.TOC4 { margin-left:33pt; margin-bottom:5pt; line-height:108%; font-size:11pt; color:#595959 }
+			.TOC5 { margin-left:44pt; margin-bottom:5pt; line-height:108%; font-size:11pt; color:#595959 }
+			.TOC6 { margin-left:55pt; margin-bottom:5pt; line-height:108%; font-size:11pt; color:#595959 }
+			.TOC7 { margin-left:66pt; margin-bottom:5pt; line-height:108%; font-size:11pt; color:#595959 }
+			.TOC8 { margin-left:77pt; margin-bottom:5pt; line-height:108%; font-size:11pt; color:#595959 }
+			.TOC9 { margin-left:88pt; margin-bottom:5pt; line-height:108%; font-size:11pt; color:#595959 }
+			.TOCHeading { margin-top:12pt; margin-bottom:1pt; page-break-inside:avoid; page-break-after:avoid; line-height:108%; font-family:Candara; font-size:20pt; color:#1d665d }
+			.TableofAuthorities { margin-left:11pt; margin-bottom:0pt; text-indent:-11pt; line-height:108%; font-size:11pt; color:#595959 }
+			.TableofFigures { margin-bottom:0pt; line-height:108%; font-size:11pt; color:#595959 }
+			.Title { margin-top:6pt; margin-bottom:6pt; line-height:normal; font-family:Candara; font-size:26pt; color:#ffffff }
+			span.BalloonTextChar { font-family:'Segoe UI' }
+			span.BookTitle { font-weight:bold; font-style:italic; letter-spacing:0.25pt }
+			span.CommentReference { font-size:11pt }
+			span.CommentSubjectChar { font-weight:bold }
+			span.DateChar { font-size:12pt; color:#1d665d }
+			span.DocumentMapChar { font-family:'Segoe UI' }
+			span.Emphasis { font-style:italic }
+			span.EndnoteReference { vertical-align:super }
+			span.FollowedHyperlink { text-decoration:underline; color:#681717 }
+			span.FootnoteReference { vertical-align:super }
+			span.HTMLAddressChar { font-style:italic }
+			span.HTMLCite { font-style:italic }
+			span.HTMLCode { font-family:Consolas; font-size:11pt }
+			span.HTMLDefinition { font-style:italic }
+			span.HTMLKeyboard { font-family:Consolas; font-size:11pt }
+			span.HTMLPreformattedChar { font-family:Consolas }
+			span.HTMLSample { font-family:Consolas; font-size:12pt }
+			span.HTMLTypewriter { font-family:Consolas; font-size:11pt }
+			span.HTMLVariable { font-style:italic }
+			span.Heading1Char { font-family:Candara; font-size:20pt; color:#1d665d }
+			span.Heading2Char { font-family:Candara; font-size:17pt; color:#262626 }
+			span.Heading3Char { font-family:Candara; font-size:16pt; color:#1d665d }
+			span.Heading4Char { font-family:Candara; font-size:14pt; font-style:italic; color:#0d0d0d }
+			span.Heading5Char { font-family:Candara; font-size:14pt; font-style:italic; color:#1d665d }
+			span.Heading6Char { font-family:Candara; font-size:13pt; color:#0d0d0d }
+			span.Heading7Char { font-family:Candara; font-size:12pt; font-style:italic; color:#000000 }
+			span.Heading8Char { font-family:Candara; font-size:12pt; font-style:italic; color:#1d665d }
+			span.Heading9Char { font-family:Candara; font-size:11pt; color:#000000 }
+			span.Hyperlink { text-decoration:underline; color:#1d665d }
+			span.IntenseEmphasis { font-style:italic; color:#1d665d }
+			span.IntenseQuoteChar { font-style:italic; color:#1d665d }
+			span.IntenseReference { font-weight:bold; font-variant:small-caps; text-transform:none; letter-spacing:0.25pt; color:#1d665d }
+			span.MacroTextChar { font-family:Consolas }
+			span.MessageHeaderChar { font-family:Candara; font-size:12pt; background-color:#cccccc }
+			span.PlaceholderText { color:#595959 }
+			span.PlainTextChar { font-family:Consolas }
+			span.QuoteChar { font-style:italic; color:#404040 }
+			span.Strong { font-weight:bold; color:#595959 }
+			span.SubtitleChar { letter-spacing:0.75pt; color:#5a5a5a }
+			span.SubtleEmphasis { font-style:italic; color:#404040 }
+			span.SubtleReference { font-variant:small-caps; color:#5a5a5a }
+			span.TitleChar { font-family:Candara; font-size:26pt; color:#ffffff }
+			.awlist1 { list-style:none; counter-reset:awlistcounter24_0 }
+			.awlist1 > li:before { content:'-'; counter-increment:awlistcounter24_0 }
+			.awlist2 { list-style:none; counter-reset:awlistcounter24_0 3 }
+			.awlist2 > li:before { content:'-'; counter-increment:awlistcounter24_0 }
+			.awlist3 { list-style:none; counter-reset:awlistcounter25_0 }
+			.awlist3 > li:before { content:''; counter-increment:awlistcounter25_0 }
+			.awlist4 { list-style:none; counter-reset:awlistcounter24_0 8 }
+			.awlist4 > li:before { content:'-'; counter-increment:awlistcounter24_0 }
+			.awlist5 { list-style:none; counter-reset:awlistcounter24_0 15 }
+			.awlist5 > li:before { content:'-'; counter-increment:awlistcounter24_0 }
+			.awlist6 { list-style:none; counter-reset:awlistcounter24_0 19 }
+			.awlist6 > li:before { content:'-'; counter-increment:awlistcounter24_0 }
+			.awlist7 { list-style:none; counter-reset:awlistcounter24_0 22 }
+			.awlist7 > li:before { content:'-'; counter-increment:awlistcounter24_0 }
+@media (max-width: 900px) { 
+img { 
+   max-width: 100%;
+   height: auto;
+}
+
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+}	
+
+
+		</style>
+	</head>
+	<body>
+		<div>
+			<table style="width:103%; margin-bottom:0pt; padding:0pt; border-collapse:collapse">
+				<tr>
+					<td style="width:468pt; padding:0pt 0pt 0pt 14.4pt; vertical-align:middle; background-color:#eaeaea">
+						<p class="Date" style="line-height:normal">
+							[14/12/2024]
+						</p>
+					</td>
+				</tr>
+			</table>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<table style="width:103%; margin-bottom:0pt; padding:0pt; border-collapse:collapse">
+				<tr>
+					<td style="width:468pt; padding:0pt 0pt 0pt 14.4pt; vertical-align:middle; background-color:#595959">
+						<p class="Title">
+							Manufacturing Downtime Project
+						</p>
+					</td>
+				</tr>
+			</table>
+			<h1>
+				Team
+			</h1>
+			<p class="BlockText">
+				[Name 1]
+			</p>
+			<p class="BlockText" style="margin-top:0pt">
+				[Name 2]
+			</p>
+			<p class="BlockText" style="margin-top:0pt">
+				&#xa0;
+			</p>
+			<p class="BlockText" style="margin-top:0pt">
+				<img src="1734334574_steps-documentation/1734334574_steps-documentation-1.jpeg" width="457" height="148" alt="" />
+			</p>
+			<ol style="margin:0pt; padding-left:0pt">
+				<li style="margin-top:24pt; margin-left:17.03pt; margin-bottom:1pt; page-break-inside:avoid; page-break-after:avoid; line-height:108%; padding-left:0.97pt; font-size:20pt; color:#1d665d">
+					Data Cleaning and Preprocessing
+				</li>
+			</ol>
+			<p class="ListParagraph" style="margin-bottom:0pt">
+				Data Preprocessing: Clean and preprocess the data using Power BI
+			</p>
+			<p class="ListParagraph">
+				&#xa0;
+			</p>
+			<p style="line-height:108%; font-size:14pt">
+				<strong><span style="color:#0070c0">Deliverables:</span></strong> Cleaned dataset ready for analysis.
+			</p>
+			<h2 style="line-height:108%; font-size:16pt">
+				<strong><span style="color:#0070c0">Steps</span></strong>
+			</h2>
+			<p class="ListBullet" style="margin-bottom:0pt">
+				The data consists of 4 Tables of data and 1 table as a data dictionary
+			</p>
+			<ul style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:38.86pt; margin-bottom:0pt; text-indent:0pt; padding-left:4.34pt; font-family:serif">
+					<strong><span style="font-family:Candara; ">Downtime factors Sheet</span></strong><strong><span style="font-family:Candara; ">&#xa0; </span></strong>
+				</li>
+			</ul>
+			<ul class="awlist1" style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Loaded sheet and selected Downtime factors Sheet
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Promoted header and changed Type
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Confirmed by data view NO Errors and NO Empty data
+				</li>
+			</ul>
+			<p class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:0pt">
+				&#xa0;
+			</p>
+			<ul style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:38.86pt; margin-bottom:0pt; text-indent:0pt; padding-left:4.34pt; font-family:serif">
+					<strong><span style="font-family:Candara; ">Line productivity Sheet</span></strong><strong><span style="font-family:Candara; ">&#xa0; </span></strong>
+				</li>
+			</ul>
+			<ul class="awlist2" style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Loaded sheet and selected Downtime factors Sheet
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Promoted header and changed Type
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Confirmed by data view NO Errors and NO Empty data
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>KEEP ONLY Required Columns
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Calculated Actual Period in minutes to:
+				</li>
+			</ul>
+			<ul class="awlist3" style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:97.2pt; margin-bottom:0pt; text-indent:-18pt; font-family:Wingdings">
+					<span style="width:9.36pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Candara">get this values and use it for further calculations</span>
+				</li>
+				<li class="ListBullet" style="margin-left:97.2pt; margin-bottom:0pt; text-indent:-18pt; font-family:Wingdings">
+					<span style="width:9.36pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Candara">No negative values confirm no errors in start and end times Entry</span>
+				</li>
+			</ul>
+			<p class="ListBullet" style="margin-left:97.2pt; margin-bottom:0pt; text-indent:0pt">
+				&#xa0;
+			</p>
+			<ul style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:38.86pt; margin-bottom:0pt; text-indent:0pt; padding-left:4.34pt; font-family:serif">
+					<strong><span style="font-family:Candara; ">Line downtime Sheet</span></strong><strong><span style="font-family:Candara; ">&#xa0; </span></strong>
+				</li>
+			</ul>
+			<ul class="awlist4" style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Loaded sheet and selected Line factors Sheet
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Promoted header but found extra undesired row. 
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>removed 1 top row first and Promoted header
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Confirmed by data view NO Errors and NO Empty data in Batch but all other data have empty values
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Empty values are due to each factor data is displayed in separate column
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Unpivot 12 factors in two column factor and Downtime in minutes
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Confirmed by data view NO Errors and NO Empty data in all remaining columns
+				</li>
+			</ul>
+			<p class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:0pt">
+				&#xa0;
+			</p>
+			<ul style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:38.86pt; margin-bottom:0pt; text-indent:0pt; padding-left:4.34pt; font-family:serif">
+					<strong><span style="font-family:Candara; ">Products Sheet</span></strong><strong><span style="font-family:Candara; ">&#xa0; </span></strong>
+				</li>
+			</ul>
+			<ul class="awlist5" style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Loaded sheet and selected Products Sheet
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Promoted header and changed Type
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Confirmed by data view NO Errors and NO Empty data
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>To use Size in calculations, it is better to use it in single unit. SO, we will change all into ml and keep necessary columns only
+				</li>
+			</ul>
+			<p class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:0pt">
+				&#xa0;
+			</p>
+			<ul style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:38.86pt; margin-bottom:0pt; text-indent:0pt; padding-left:4.34pt; font-family:serif">
+					<img src="1734334574_steps-documentation/1734334574_steps-documentation-2.png" width="536" height="444" alt="" /><strong><span style="font-family:Candara; ">ERD (Entity Relationship Diagram)</span></strong>
+				</li>
+			</ul>
+			<p class="ListBullet" style="margin-left:0pt; text-indent:0pt">
+				&#xa0;
+			</p>
+			<ol start="2" style="margin:0pt; padding-left:0pt">
+				<li style="margin-top:24pt; margin-left:18pt; margin-bottom:1pt; page-break-inside:avoid; page-break-after:avoid; line-height:108%; font-size:20pt; color:#1d665d">
+					Analysis Questions Phase
+				</li>
+			</ol>
+			<p class="ListParagraph" style="margin-bottom:0pt">
+				Determine Data Analysis Questions: Determine all possible analysis questions that can be deducted from the given dataset and would be of interest to the organization’s decision makers.
+			</p>
+			<p class="ListParagraph">
+				&#xa0;
+			</p>
+			<p style="line-height:108%; font-size:14pt">
+				<strong><span style="color:#0070c0">Deliverables:</span></strong><span style="color:#0070c0"> </span>Set of analysis questions that can be answered via the dataset.
+			</p>
+			<h2 style="line-height:108%; font-size:16pt">
+				<strong><span style="color:#0070c0">Steps</span></strong>
+			</h2>
+			<ul style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:38.86pt; margin-bottom:0pt; text-indent:0pt; padding-left:4.34pt; font-family:serif">
+					<strong><span style="font-family:Candara; ">All Available Data </span></strong>
+				</li>
+			</ul>
+			<ul class="awlist6" style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Downtime [Factor – Operator Error (YES/NO)]
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Time [ Date – Start – End – Actual Period ]
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Unique [ Batch – Product – Operator - Flavor]
+				</li>
+			</ul>
+			<p class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:0pt">
+				&#xa0;
+			</p>
+			<ul style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:38.86pt; margin-bottom:0pt; text-indent:0pt; padding-left:4.34pt; font-family:serif">
+					<strong><span style="font-family:Candara; ">To check Downtime (Sum, Average, Max, Min, Mode) vs:</span></strong>
+				</li>
+			</ul>
+			<ul class="awlist7" style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Factor 
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Operator Error (YES/NO)
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Operator (Name)
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Batch
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Product
+				</li>
+				<li class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:-18pt">
+					<span style="width:15.23pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Flavor
+				</li>
+			</ul>
+			<p class="ListBullet" style="margin-left:61.2pt; margin-bottom:0pt; text-indent:0pt">
+				&#xa0;
+			</p>
+			<ul style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:38.86pt; margin-bottom:0pt; text-indent:0pt; padding-left:4.34pt; font-family:serif">
+					<span style="font-family:Candara">&#xa0;</span>
+				</li>
+			</ul>
+			<p class="ListBullet" style="margin-left:0pt; text-indent:0pt">
+				&#xa0;
+			</p>
+			<ol start="3" style="margin:0pt; padding-left:0pt">
+				<li style="margin-top:24pt; margin-left:18pt; margin-bottom:1pt; page-break-inside:avoid; page-break-after:avoid; line-height:108%; font-size:20pt; color:#1d665d">
+					Dashboard Phase
+				</li>
+			</ol>
+			<p class="ListParagraph" style="margin-bottom:0pt">
+				Build Dashboard: Build a Power BI dashboard that visualize the answers to the asked questions.
+			</p>
+			<p class="ListParagraph">
+				&#xa0;
+			</p>
+			<p style="line-height:108%; font-size:14pt">
+				<strong><span style="color:#0070c0">Deliverables:</span></strong><span style="color:#0070c0"> </span>Power BI dashboard.
+			</p>
+			<h2 style="line-height:108%; font-size:16pt">
+				<strong><span style="color:#0070c0">Steps</span></strong>
+			</h2>
+			<ul style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:38.86pt; margin-bottom:0pt; text-indent:0pt; padding-left:4.34pt; font-family:serif">
+					<span style="font-family:Candara">Every one to record every step he makes</span>
+				</li>
+				<li class="ListBullet" style="margin-left:38.86pt; margin-bottom:0pt; text-indent:0pt; padding-left:4.34pt; font-family:serif">
+					<span style="font-family:Candara">&#xa0;</span>
+				</li>
+			</ul>
+			<p class="ListBullet" style="margin-left:0pt; text-indent:0pt">
+				&#xa0;
+			</p>
+			<ol start="4" style="margin:0pt; padding-left:0pt">
+				<li style="margin-top:24pt; margin-left:18pt; margin-bottom:1pt; page-break-inside:avoid; page-break-after:avoid; line-height:108%; font-size:20pt; color:#1d665d">
+					Final Presentation
+				</li>
+			</ol>
+			<p class="ListParagraph">
+				Prepare a report and presentation summarizing the project work, including data analysis, model development, and deployment.
+			</p>
+			<p style="line-height:108%; font-size:14pt">
+				<strong><span style="color:#0070c0">Deliverables:</span></strong><span style="color:#0070c0"> </span>Final report and presentation.
+			</p>
+			<h2 style="line-height:108%; font-size:16pt">
+				<strong><span style="color:#0070c0">Steps</span></strong>
+			</h2>
+			<ul style="margin:0pt; padding-left:0pt">
+				<li class="ListBullet" style="margin-left:38.86pt; margin-bottom:0pt; text-indent:0pt; padding-left:4.34pt; font-family:serif">
+					<span style="font-family:Candara">Every one to record every step he makes</span>
+				</li>
+				<li class="ListBullet" style="margin-left:38.86pt; margin-bottom:0pt; text-indent:0pt; padding-left:4.34pt; font-family:serif">
+					<span style="font-family:Candara">&#xa0;</span>
+				</li>
+			</ul>
+			<p class="ListBullet" style="margin-left:0pt; text-indent:0pt">
+				&#xa0;
+			</p>
+			<h1>
+				Discussion
+			</h1>
+			<p>
+				[Summarize the discussion for each issue, state the outcome, and assign any action items.]
+			</p>
+			<h1>
+				Summary
+			</h1>
+			<p>
+				[Summarize the status of each area/department.]
+			</p>
+			<div style="clear:both">
+				<p class="Footer">
+					1
+				</p>
+			</div>
+		</div>
+	<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0">Converted to HTML with WordToHTML.net</a></p>
+</body>
+</html>
