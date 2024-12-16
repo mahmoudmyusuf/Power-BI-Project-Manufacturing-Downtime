@@ -27,15 +27,15 @@ Data Preprocessing: Clean and preprocess the data using Power BI
 
 The data consists of 4 Tables of data and 1 table as a data dictionary
 
-- **Downtime factors Sheet**
+> - **Downtime factors Sheet**
 
 <!-- -->
 
-> - Loaded sheet and selected Downtime factors Sheet
+ - Loaded sheet and selected Downtime factors Sheet
 
-> - Promoted header and changed Type
+ - Promoted header and changed Type
 
-> - Confirmed by data view NO Errors and NO Empty data
+ - Confirmed by data view NO Errors and NO Empty data
 
 <!-- -->
 
