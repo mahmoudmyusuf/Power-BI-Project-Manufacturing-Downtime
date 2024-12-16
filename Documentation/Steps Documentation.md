@@ -56,12 +56,10 @@ The data consists of 4 Tables of data and 1 table as a data dictionary
 >
 <!-- -->
 >
-  >- get this values and use it for further calculations
-  >
-  >- No negative values confirm no errors in start and end times Entry
-  >
+>    - get this values and use it for further calculations
+>    - No negative values confirm no errors in start and end times Entry
 <!-- -->
-
+<!-- -->
 
 **Line downtime Sheet**
 
