@@ -8,7 +8,7 @@ Subtitle layout table
 
 Title layout table
 
-# Team {#team .unnumbered}
+# Team 
 
 > \[Name 1\]
 >
@@ -29,76 +29,41 @@ The data consists of 4 Tables of data and 1 table as a data dictionary
 
 **Downtime factors Sheet**
 
-<!-- -->
-
->- Loaded sheet and selected Downtime factors Sheet
->
-> - Promoted header and changed Type
->
-> - Confirmed by data view NO Errors and NO Empty data
-
-<!-- -->
-
+> * Loaded sheet and selected Downtime factors Sheet
+> * Promoted header and changed Type
+> * Confirmed by data view NO Errors and NO Empty data
 
 **Line productivity Sheet**
 
-<!-- -->
-
->- Loaded sheet and selected Downtime factors Sheet
->
->- Promoted header and changed Type
->
->- Confirmed by data view NO Errors and NO Empty data
->
->- KEEP ONLY Required Columns
->
->- Calculated Actual Period in minutes to:
->
-<!-- -->
->
->    - get this values and use it for further calculations
->    - No negative values confirm no errors in start and end times Entry
-<!-- -->
-<!-- -->
+> * Loaded sheet and selected Downtime factors Sheet
+> * Promoted header and changed Type
+> * Confirmed by data view NO Errors and NO Empty data
+> * KEEP ONLY Required Columns
+> * Calculated Actual Period in minutes to:
+>    * get this values and use it for further calculations
+>    * No negative values confirm no errors in start and end times Entry
 
 **Line downtime Sheet**
 
-<!-- -->
->
->- Loaded sheet and selected Line factors Sheet
->
->- Promoted header but found extra undesired row.
->
->- removed 1 top row first and Promoted header
->
->- Confirmed by data view NO Errors and NO Empty data in Batch but all
+> * Loaded sheet and selected Line factors Sheet
+> * Promoted header but found extra undesired row.
+> * removed 1 top row first and Promoted header
+> * Confirmed by data view NO Errors and NO Empty data in Batch but all
   other data have empty values
->
->- Empty values are due to each factor data is displayed in separate
+> * Empty values are due to each factor data is displayed in separate
   column
->
->- Unpivot 12 factors in two column factor and Downtime in minutes
->
->- Confirmed by data view NO Errors and NO Empty data in all remaining
+> * Unpivot 12 factors in two column factor and Downtime in minutes
+> * Confirmed by data view NO Errors and NO Empty data in all remaining
   columns
->
-<!-- -->
-
 
 **Products Sheet**
 
-<!-- -->
 
-- Loaded sheet and selected Products Sheet
-
-- Promoted header and changed Type
-
-- Confirmed by data view NO Errors and NO Empty data
-
-- To use Size in calculations, it is better to use it in single unit.
+> * Loaded sheet and selected Products Sheet
+> * Promoted header and changed Type
+> * Confirmed by data view NO Errors and NO Empty data
+> * To use Size in calculations, it is better to use it in single unit.
   SO, we will change all into ml and keep necessary columns only
-
-<!-- -->
 
 - ![](media/image2.png){width="5.58125in"
   height="4.615972222222222in"}**ERD (Entity Relationship Diagram)**
@@ -114,37 +79,21 @@ dataset.
 
 ## **Steps** 
 
-- **All Available Data**
+**All Available Data**
 
-<!-- -->
+> * Downtime \[Factor -- Operator Error (YES/NO)\]
+> * Time \[ Date -- Start -- End -- Actual Period \]
+> * Unique \[ Batch -- Product -- Operator - Flavor\]
 
-- Downtime \[Factor -- Operator Error (YES/NO)\]
 
-- Time \[ Date -- Start -- End -- Actual Period \]
+**To check Downtime (Sum, Average, Max, Min, Mode)** **vs:**
+> * Factor
+> * Operator Error (YES/NO)
+> * Operator (Name)
+> * Batch
+> * Product
+> * Flavor
 
-- Unique \[ Batch -- Product -- Operator - Flavor\]
-
-<!-- -->
-
-- **To check Downtime (Sum, Average, Max, Min, Mode)** **vs:**
-
-<!-- -->
-
-- Factor
-
-- Operator Error (YES/NO)
-
-- Operator (Name)
-
-- Batch
-
-- Product
-
-- Flavor
-
-<!-- -->
-
-- 
 
 # Dashboard Phase
 
@@ -155,9 +104,8 @@ to the asked questions.
 
 ## **Steps** 
 
-- Every one to record every step he makes
+> * Every one to record every step he makes
 
-- 
 
 # Final Presentation
 
@@ -168,9 +116,8 @@ including data analysis, model development, and deployment.
 
 ## **Steps** 
 
-- Every one to record every step he makes
+> * Every one to record every step he makes
 
-- 
 
 # Discussion 
 
