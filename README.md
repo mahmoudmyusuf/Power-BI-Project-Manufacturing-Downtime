@@ -1,10 +1,10 @@
 # Power-BI-Project-Manufacturing-Downtime
 Manufacturing Downtime
 
-> /Datasets - Store source data files (CSV, Excel, etc.).
-> /Scripts - Add Power Query M scripts or DAX scripts.
-> /Reports - Store .pbix files.
-> /Documentation - Include project details, guidelines, or meeting notes (Markdown files).
+> **/Datasets** - Store source data files (CSV, Excel, etc.). <br>
+> **/Scripts** - Add Power Query M scripts or DAX scripts. <b>
+> **/Reports** - Store .pbix files. <br>
+> **/Documentation** - Include project details, guidelines, or meeting notes (Markdown files).<br>
 
 
 ## Project goals:
