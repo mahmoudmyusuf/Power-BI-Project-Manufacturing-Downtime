@@ -1,8 +1,8 @@
 # Power-BI-Project-Manufacturing-Downtime
 Manufacturing Downtime
 
-# Project goals:
+## Project goals:
 
-# How to contribute:
+## How to contribute:
 
-# Data sources:
+## Data sources:
