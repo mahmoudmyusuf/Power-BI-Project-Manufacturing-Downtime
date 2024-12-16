@@ -23,7 +23,7 @@ Data Preprocessing: Clean and preprocess the data using Power BI
 
 **Deliverables:** Cleaned dataset ready for analysis.
 
-## **Steps** {#steps .unnumbered}
+## **Steps** 
 
 The data consists of 4 Tables of data and 1 table as a data dictionary
 
@@ -111,7 +111,7 @@ interest to the organization's decision makers.
 **Deliverables:** Set of analysis questions that can be answered via the
 dataset.
 
-## **Steps** {#steps-1 .unnumbered}
+## **Steps** 
 
 - **All Available Data**
 
@@ -152,7 +152,7 @@ to the asked questions.
 
 **Deliverables:** Power BI dashboard.
 
-## **Steps** {#steps-2 .unnumbered}
+## **Steps** 
 
 - Every one to record every step he makes
 
@@ -165,17 +165,17 @@ including data analysis, model development, and deployment.
 
 **Deliverables:** Final report and presentation.
 
-## **Steps** {#steps-3 .unnumbered}
+## **Steps** 
 
 - Every one to record every step he makes
 
 - 
 
-# Discussion {#discussion .unnumbered}
+# Discussion 
 
 \[Summarize the discussion for each issue, state the outcome, and assign
 any action items.\]
 
-# Summary {#summary .unnumbered}
+# Summary 
 
 \[Summarize the status of each area/department.\]
