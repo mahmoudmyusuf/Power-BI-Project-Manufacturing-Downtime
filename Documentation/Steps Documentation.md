@@ -39,52 +39,55 @@ The data consists of 4 Tables of data and 1 table as a data dictionary
 
 <!-- -->
 
-- **Line productivity Sheet**
+
+**Line productivity Sheet**
 
 <!-- -->
 
-- Loaded sheet and selected Downtime factors Sheet
-
-- Promoted header and changed Type
-
-- Confirmed by data view NO Errors and NO Empty data
-
-- KEEP ONLY Required Columns
-
-- Calculated Actual Period in minutes to:
-
+>- Loaded sheet and selected Downtime factors Sheet
+>
+>- Promoted header and changed Type
+>
+>- Confirmed by data view NO Errors and NO Empty data
+>
+>- KEEP ONLY Required Columns
+>
+>- Calculated Actual Period in minutes to:
+>
+<!-- -->
+>
+>- get this values and use it for further calculations
+>
+>- No negative values confirm no errors in start and end times Entry
+>
 <!-- -->
 
-- get this values and use it for further calculations
 
-- No negative values confirm no errors in start and end times Entry
-
-<!-- -->
-
-- **Line downtime Sheet**
+**Line downtime Sheet**
 
 <!-- -->
-
-- Loaded sheet and selected Line factors Sheet
-
-- Promoted header but found extra undesired row.
-
-- removed 1 top row first and Promoted header
-
-- Confirmed by data view NO Errors and NO Empty data in Batch but all
+>
+>- Loaded sheet and selected Line factors Sheet
+>
+>- Promoted header but found extra undesired row.
+>
+>- removed 1 top row first and Promoted header
+>
+>- Confirmed by data view NO Errors and NO Empty data in Batch but all
   other data have empty values
-
-- Empty values are due to each factor data is displayed in separate
+>
+>- Empty values are due to each factor data is displayed in separate
   column
-
-- Unpivot 12 factors in two column factor and Downtime in minutes
-
-- Confirmed by data view NO Errors and NO Empty data in all remaining
+>
+>- Unpivot 12 factors in two column factor and Downtime in minutes
+>
+>- Confirmed by data view NO Errors and NO Empty data in all remaining
   columns
-
+>
 <!-- -->
 
-- **Products Sheet**
+
+**Products Sheet**
 
 <!-- -->
 
