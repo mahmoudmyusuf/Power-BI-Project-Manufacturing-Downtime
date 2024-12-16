@@ -1,21 +1,21 @@
 | \[14/12/2024\] |
 |----------------|
 
-Subtitle layout table
-
 | Manufacturing Downtime Project |
 |--------------------------------|
 
-Title layout table
-
 # Team 
 
-> \[Name 1\]
->
-> \[Name 2\]
->
-> ![](media/image1.jpg){width="4.760416666666667in"
-> height="1.5416666666666667in"}
+> Mohamed Saleh Hammam
+> 
+> Mahmoud Mohamed Abdel Aziz
+> 
+> Ahmed Mohamed Hanafy
+> 
+> Ayman Saad Abo Zamel
+> 
+> Mina Edwar Qudoos
+
 
 # Data Cleaning and Preprocessing
 
@@ -65,8 +65,8 @@ The data consists of 4 Tables of data and 1 table as a data dictionary
 > * To use Size in calculations, it is better to use it in single unit.
   SO, we will change all into ml and keep necessary columns only
 
-- ![](media/image2.png){width="5.58125in"
-  height="4.615972222222222in"}**ERD (Entity Relationship Diagram)**
+**ERD (Entity Relationship Diagram)**
+> ![](media/image2.png)
 
 # Analysis Questions Phase
 
