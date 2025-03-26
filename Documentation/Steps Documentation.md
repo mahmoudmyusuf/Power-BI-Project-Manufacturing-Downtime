@@ -127,27 +127,49 @@ Determine all possible analysis questions that can be answered via the dataset a
 
 # 📊 **Dashboard Phase**  
 
-### **Build Dashboard:**  
-Create a Power BI dashboard to visualize the answers to the identified questions.
 
-**Deliverables:** ✅ Power BI dashboard.
+### **📊 Build Dashboard:**  
+Create a Power BI dashboard to visualize key insights, including downtime analysis, operator contributions, and production efficiency.  
+
+**Deliverables:** ✅ Power BI dashboard.  
+
+🔗 **View Dashboard Here:** [Manufacturing Line Productivity Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZmNiZTNlMjEtMDA4MC00ZjJjLWFmMGEtMjA2ZDgyMmZlOTUxIiwidCI6IjIwODJkZTQ2LTFhZmEtNGI2NC1hNDQwLTY1NThmODBlOTg0MCIsImMiOjh9)  
 
 ## **Steps**  
 
-📌 **Everyone records every step taken**  
+📌 **Data Exploration & Cleaning**: Discuss data structure, clean inconsistencies, and ensure data readiness.  
+📌 **Creating Measures & KPIs**: Develop DAX measures for key indicators such as downtime percentage, operator efficiency, and production trends.  
+📌 **Preliminary Visualizations**: Create exploratory charts to understand relationships between downtime, operator errors, and machine failures.  
+📌 **Final Dashboard Design**: Structure interactive visuals with filters for total production, operator-based, and product-based perspectives.  
+📌 **Downtime Analysis**: Compare downtime across operator errors and machine failures, ensuring actionable insights.  
+📌 **Color Standardization**: Apply unified color schema for consistency:  
+   - **Operator Errors**: 🔴 `#D64550`  
+   - **Machine Failures**: ⚫ `#999999`  
+   - **No Error**: 🟢 `#08D731`  
+
 
 ---
+
+
+
 
 # 📑 **Final Presentation**  
 
 ### **Prepare a Report & Presentation:**  
-Summarize project work, including data analysis, model development, and deployment.
+Summarize project work, including data analysis, model development, and deployment.  
 
-**Deliverables:** 📜 Final report & 🎤 Presentation.
+**Deliverables:** 📜 [Final Report](report.md) & 🎤 Presentation.  
 
 ## **Steps**  
 
-📌 **Everyone records every step taken**  
+📌 **Data Collection & Preprocessing**: Gather and clean data, ensuring consistency and accuracy.  
+📌 **Dashboard Development**: Create an interactive Power BI dashboard with key metrics and filters.  
+📌 **Downtime & Productivity Analysis**: Examine downtime causes, operator contributions, and efficiency trends.  
+📌 **Recommendations**: Develop strategies for reducing downtime and optimizing production.  
+📌 **Final Review & Presentation**: Compile findings into a structured report and prepare the presentation.  
+
+---
+
 
 ---
 
