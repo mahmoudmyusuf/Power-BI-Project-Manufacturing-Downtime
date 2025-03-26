@@ -21,7 +21,7 @@ Clean and preprocess the data using Power BI.
 
 **Deliverables:** ✅ Cleaned dataset ready for analysis.
 
-## **Steps** 
+## **Steps**  
 
 📂 **The data consists of 4 tables of data and 1 table as a data dictionary.**
 
@@ -57,9 +57,18 @@ Clean and preprocess the data using Power BI.
 ### **ERD (Entity Relationship Diagram)**
 🖼️ ![](media/image2.png)  
 
+### **📌 Schema Modification for Analysis**  
+📊 Initially, we applied the first analysis using a **Snowflake Schema**, but in the final report, we changed it to a **Star Schema** for better performance.  
+
+🔹 **Processing Steps for Star Schema:**  
+✔ Added a new **Downtime Factor with ID 0** to represent **NO Downtime, No Error batches**  
+✔ Merged **Line Downtime** and **Line Productivity** tables into a **new query**  
+✔ Replaced **NULL values** for missing downtime factors with **0**, and downtime duration with **0**  
+✔ This **denormalization process** improves efficiency when dealing with **large datasets**  
+
 ---
 
-# 🔍 **Analysis Questions Phase** 
+# 🔍 **Analysis Questions Phase**  
 
 ### **Determine Data Analysis Questions:**  
 Determine all possible analysis questions that can be answered via the dataset and would interest the organization’s decision-makers.  
@@ -152,4 +161,6 @@ Summarize project work, including data analysis, model development, and deployme
 
 📌 **Summarize the status of each area/department.**  
 
+---
 
+This version integrates your new **Star Schema modification** explanation in a structured and visually appealing way. Let me know if you need any other updates! 🚀
