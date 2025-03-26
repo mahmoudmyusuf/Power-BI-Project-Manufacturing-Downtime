@@ -158,7 +158,7 @@ Create a Power BI dashboard to visualize key insights, including downtime analys
 ### **Prepare a Report & Presentation:**  
 Summarize project work, including data analysis, model development, and deployment.  
 
-**Deliverables:** 📜 [Final Report](report.md) & 🎤 Presentation.  
+**Deliverables:** 📜 [Final Report](Report.md) & 🎤 [Presentation]([Report.md](https://gamma.app/docs/Manufacturing-Line-Productivity--qqup867hiqoir19?mode=doc)).  
 
 ## **Steps**  
 
