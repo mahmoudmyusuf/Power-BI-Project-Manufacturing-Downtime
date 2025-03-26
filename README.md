@@ -7,7 +7,8 @@ The analysis covers **batch production trends, operator efficiency, and downtime
 
 🚀 **Final Deliverables:**
 - 🔗 [Final Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZmNiZTNlMjEtMDA4MC00ZjJjLWFmMGEtMjA2ZDgyMmZlOTUxIiwidCI6IjIwODJkZTQ2LTFhZmEtNGI2NC1hNDQwLTY1NThmODBlOTg0MCIsImMiOjh9)
-- 📜 [Final Report](https://gamma.app/docs/Manufacturing-Line-Productivity--qqup867hiqoir19?mode=doc)
+- 🌜 [Final Report](Documentation/Report.md)
+- 📝 [Final Presentation](https://gamma.app/docs/Manufacturing-Line-Productivity--qqup867hiqoir19?mode=doc)
 
 ---
 
@@ -40,7 +41,7 @@ The analysis covers **batch production trends, operator efficiency, and downtime
 
 ---
 
-## 🔧 Technologies Used  
+## 🛠 Technologies Used  
 - **Power BI** for data visualization & analysis
 - **Power Query** for data transformation
 - **DAX** for measure calculations
